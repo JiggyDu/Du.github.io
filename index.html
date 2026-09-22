@@ -153,6 +153,22 @@
     max-width:58ch;
   }
 
+  /* ---------- PROJECTS ---------- */
+  .project-card{
+    border:1px solid var(--rule); border-radius:10px; padding:22px 24px;
+    background:var(--paper);
+  }
+  .project-head{display:flex; align-items:baseline; gap:10px; flex-wrap:wrap; margin-bottom:8px;}
+  .project-head h3{font-family:var(--serif); font-weight:600; font-size:1.15rem; margin:0;}
+  .project-tag{font-family:var(--mono); font-size:0.72rem; color:var(--muted); border:1px solid var(--rule); border-radius:5px; padding:2px 8px;}
+  .project-blurb{color:var(--muted); font-size:0.93rem; max-width:60ch; margin:0 0 18px;}
+  .feature-grid{display:grid; grid-template-columns:1fr 1fr; gap:12px 20px;}
+  @media (max-width:560px){ .feature-grid{grid-template-columns:1fr;} }
+  .feature-item{display:flex; gap:9px; align-items:flex-start; font-size:0.87rem;}
+  .feature-icon{flex:0 0 auto; line-height:1.4;}
+  .feature-item strong{display:block; font-weight:600; font-size:0.87rem;}
+  .feature-item span{color:var(--muted); font-size:0.83rem;}
+
   /* ---------- HOW I WORK ---------- */
   .traits{display:grid; grid-template-columns:1fr 1fr; gap:18px 24px; margin-bottom:32px;}
   @media (max-width:540px){ .traits{grid-template-columns:1fr;} }
@@ -214,6 +230,7 @@
     <ul class="nav-links">
       <li><a href="#who">Who I am</a></li>
       <li><a href="#what">What I do</a></li>
+      <li><a href="#projects">Projects</a></li>
       <li><a href="#how">How I work</a></li>
       <li><a href="#play">Off the clock</a></li>
       <li><a href="#reach">Reach me</a></li>
@@ -240,18 +257,14 @@
     <div class="role">Computer Science student, aspiring network engineer</div>
 
     <p class="lede">
-      I like figuring out how systems talk to each other — and how to keep
-      that conversation fast, secure, and reliable. Right now I'm building
-      the foundation for a career in network engineering, one lab and one
-      line of config at a time.
+      I am a 3rd year Student from the University of San Carlos. I like
+      figuring out how systems talk to each other, and I enjoy building and
+      tinkering with computer hardware in my spare time. Right now I'm
+      building the foundation for a career in network engineering, one lab
+      and one line of config at a time.
     </p>
 
-    <p class="fun-fact">
-      Fun fact: I move between Cebuano, Tagalog, and English without
-      thinking twice — now I'm working on getting just as fluent in routing
-      protocols.
-    </p>
-  </section>
+      </section>
 
   <section class="block" id="what">
     <h2>What I do</h2>
@@ -302,6 +315,61 @@
       lab builds and projects as I move further through my CCNA path and
       coursework at USC.
     </p>
+  </section>
+
+  <section class="block" id="projects">
+    <h2>Projects</h2>
+    <p class="kicker">Something I've been designing and building on the side.</p>
+
+    <div class="project-card">
+      <div class="project-head">
+        <h3>📊 BudgetFlow</h3>
+        <span class="project-tag">Mobile app</span>
+      </div>
+      <p class="project-blurb">
+        A personal finance mobile app that helps users track income and
+        expenses, manage budgets, and visualize spending through insightful
+        analytics.
+      </p>
+      <div class="feature-grid">
+        <div class="feature-item">
+          <span class="feature-icon">📊</span>
+          <div><strong>Expense &amp; income tracking</strong><span>Log, categorize, edit, or delete transactions anytime.</span></div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">💼</span>
+          <div><strong>Budget management</strong><span>Set weekly/monthly budgets with threshold alerts.</span></div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">📈</span>
+          <div><strong>Reports &amp; analytics</strong><span>Charts, category breakdowns, and spending trends.</span></div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">🔁</span>
+          <div><strong>Recurring transactions</strong><span>Automate regular expenses and bill reminders.</span></div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">🏦</span>
+          <div><strong>Multi-account support</strong><span>Cash, bank, and e-wallets with transfers between them.</span></div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">🔍</span>
+          <div><strong>Search &amp; filters</strong><span>Find transactions fast by date, category, or keyword.</span></div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">🔐</span>
+          <div><strong>Security &amp; privacy</strong><span>Privacy-focused design with data protection built in.</span></div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">☁️</span>
+          <div><strong>Backup &amp; sync</strong><span>Local or cloud backup, restorable anytime.</span></div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">🎯</span>
+          <div><strong>Savings goals</strong><span>Set targets and track progress toward them.</span></div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section class="block" id="how">
@@ -379,6 +447,14 @@
         <div class="tag-row">
           <span class="tag lead">Tennis</span>
           <span class="tag lead">Badminton</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Hardware &amp; building</h3>
+        <p class="sg-desc">I've built and upgraded several PCs, from picking parts to full assembly.</p>
+        <div class="tag-row">
+          <span class="tag lead">PC building</span>
+          <span class="tag lead">Tinkering with hardware</span>
         </div>
       </div>
     </div>
